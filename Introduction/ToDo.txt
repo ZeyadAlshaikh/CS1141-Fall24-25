@@ -1,0 +1,29 @@
+To Do:
+-What is OOP?
+-Principles:
+    1- Encapsulation
+    2- Inheritance
+    3- Polymorphism + (Interfaces)
+
+-Primitive[one value ] Types vs. Reference Types[object]
+1- Encapsulation
+    -Attributes (nouns)
+    -Behaviors  (verbs) methods
+
+- Package
+- Class Account example
+- Instance Variables i.e, balance
+- Access Modifiers  public, private
+- Setters & getters methods i.e, setTime method
+
+- Driver Class
+- Instantiation new
+
+- UML
+
+
+
+
+Compiling and Executing an App
+
+
