@@ -20,10 +20,6 @@ To Do:
 - Instantiation new
 
 - UML
-
-
-
-
 Compiling and Executing an App
 
 

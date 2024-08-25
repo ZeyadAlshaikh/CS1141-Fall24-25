@@ -1,0 +1,33 @@
+To Do:
+- Notes on import Declarations
+    - Within package [default package]
+    - Use with fully qualified class name
+- Default and Explicit Initialization
+    - Primitive
+    - Reference
+- Constructors [ public ClassName( args)]
+    - Default constructor
+    - No argument constructor
+    - Overload constructors
+    - Copy constructor
+    - UML <<constructor>> ClassName(args)
+    - Keyword this() [first statement]
+
+ Next lecture....
+- Class variable [ class static data members] and object's instance variables
+- Class method and instance methods
+- Final Instance Variables [INCREMENT]
+
+
+Notes:
+- .java file contains only one public class
+- String is immutable
+- Garbage collection
+- static import
+
+
+
+
+
+
+
