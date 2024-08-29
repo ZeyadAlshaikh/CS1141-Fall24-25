@@ -3,14 +3,14 @@ package Introduction.Lecture2;
 public class Student {
 
     // instance variables
-    private String name, ID, major;
+    private String name, major;
+    private final String ID ;
+    private static int counter = 0;
 
 
     public Student(){
         this("NA","NA","NA");
         System.out.println("Call no argument constructor");
-
-
     }
 
     public Student(String name){
@@ -28,18 +28,19 @@ public class Student {
     }
 
     public Student(String name, String ID, String major){
+
         System.out.println(" Constructor with String name, ID and major");
         this.name = name;
         this.ID = ID;
         this.major = major;
+        this.counter++;
     }
 
 
     // copy constructor....
     public Student(Student s1){
-        this.name = s1.name;
-        this.ID = s1.ID;
-        this.major = s1.major;
+        this(s1.name,s1.ID,s1.major);
+
     }
 
     public void setName(String name){
@@ -49,10 +50,11 @@ public class Student {
         return name ;
     }
 
-    public void setID(String ID){
-        this.ID = ID;
-    }
+//    public void setID(String ID){
+//        this.ID = ID;
+//    }
     public String getID(){
+        System.out.println(getAreaCode());
         return ID ;
     }
 
@@ -64,6 +66,22 @@ public class Student {
     }
 
 
+    public String toString(){
+        return String.format("Student Information:%nName:%s%nID:%s%nMajor:%s%n Total Students: %d%n",this.name, this.ID, this.major, this.counter);
+    }
+
+    public static int getAreaCode(){
+       // System.out.println(getName()); this will cause an error
+        return 966;
+    }
+
+    public static  void setCounter(int count){
+        counter = count;
+    }
+
+    public static int getCounter(){
+        return counter;
+    }
 
 }
 

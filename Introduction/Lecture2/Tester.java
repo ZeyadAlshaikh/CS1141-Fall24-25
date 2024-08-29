@@ -3,9 +3,20 @@ package Introduction.Lecture2;
 public class Tester {
 
     public static void main(String[] args) {
-        Student s1 ;
-        s1 = new Student("Khaled", "44590890890", "IS");
-        Student s2 = new Student(s1);
+
+        Object ob;
+//        Student s1 ;
+//        s1 = new Student("Khaled", "44590890890", "IS");
+//        System.out.println(s1);
+//        Student s2 = new Student(s1);
+//        System.out.println(s2);
+//
+//        System.out.println(Student.counter);
+        Student.setCounter(100);
+        System.out.println(Student.getCounter());
+        System.out.println(Student.getAreaCode());
+
+        System.out.println(Math.PI);
 //        s2.setName(s1.getName());
 //        s2.setID(s1.getID());
 //        s2.setMajor(s1.getMajor());
@@ -16,9 +27,11 @@ public class Tester {
 //        s1.setID( "44512345");
 //        s1.setMajor( "IS");
 
-        System.out.printf("Student 1 Information:%nName:%s%nID:%s%nMajor:%s%n",s1.getName(), s1.getID(), s1.getMajor());
-
-        System.out.printf("Student 2 Information:%nName:%s%nID:%s%nMajor:%s%n",s2.getName(), s2.getID(), s2.getMajor());
+//        System.out.printf(s1.toString());
+//        //s1.counter = 10;
+//        //System.out.printf(s1.toString());
+//
+//        System.out.printf(s2.toString());
 
 
     }
