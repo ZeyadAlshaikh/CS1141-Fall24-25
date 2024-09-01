@@ -1,0 +1,27 @@
+To Do:
+- Composition [has-a relationship]
+- Inheritance [is-a relationship] extends
+    - Direct superclass  and Indirect superclass
+    - All members of all superclasses are inherited (except private)
+    - Protected access is an intermediate level of access between public and private.
+        - can be accessed by
+        - Members of that superclass
+        - Members of its subclasses
+        - Members of other classes in the same package
+    - Constructors
+        - Not inherited.
+        - super()
+        - calling super constructor
+        - Constructor chain
+    - Override method
+        - @Override
+        - toString method
+        -super.******()
+
+
+
+
+
+
+
+
