@@ -1,4 +1,4 @@
-package Tutorials;
+package Tutorials.Tutorial_4;
 
 public class Point {
     private int x, y;

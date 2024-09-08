@@ -1,6 +1,6 @@
 package Polymorphism;
 
-public class BasePlusCommissionEmployee extends CommissionEmployee {
+public class BasePlusCommissionEmployee extends Employee {
 
     private double base_salary;
 
@@ -20,7 +20,8 @@ public class BasePlusCommissionEmployee extends CommissionEmployee {
 
     @Override
     public double earnings(){
-        return base_salary + super.earnings();
+
+        return base_salary + ( grossSale * commissionRate);
     }
 
     @Override

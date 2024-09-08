@@ -1,4 +1,4 @@
-package Tutorials;
+package Tutorials.Tutorial_4;
 
 public class Tester {
     public static void main(String[] args) {
