@@ -1,6 +1,6 @@
 package Tutorials.Tutorial_5;
 
-public class Shape
+public abstract class Shape
 {
     private String color;
     private Point position;
@@ -10,10 +10,11 @@ public class Shape
         this.position = position;
     }
 
-    public double getArea() {
-        System.err.println("Shape unknown! Cannot compute area!");
+    public abstract double getArea();
+    /*{
+        System.out.println("Shape unknown! Cannot compute area!");
         return 0;
-    }
+    }*/
 
     @Override
     public String toString() {
