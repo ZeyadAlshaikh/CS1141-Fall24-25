@@ -1,9 +1,12 @@
 To Do:
+Lecture#1
 - What is polymorphism ?
     - Dynamic binding or late binding
 - Abstract
     - Abstract class
     - Abstract method
+
+Lecture#2
 - final Methods and Classes [static binding]
 - Interfaces
 
