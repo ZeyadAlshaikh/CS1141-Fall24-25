@@ -1,0 +1,59 @@
+To Do:
+- What is an exception?
+    - Examples:
+        - ArrayIndexOutOfBoundsException
+        - ClassCastException
+        - NullPointerException
+        - ArithmeticException
+        - InputMismatchException
+    - Exceptions Information [Stack trace]: name,method-call stack
+    -
+- Why do we handel exceptions?
+- How to handel exceptions
+    - try catch
+    - catch
+        - System.err
+        - local variables of try, and methods
+        - Multi-catch (Type1 | Type2 | Type3 e)
+        - Uncaught exception
+    - throws: method_name(parameters) throws ExceptionName1,ExceptionName2
+- Java Exception Hierarchy slide 23-24
+    - Unchecked exceptions subclasses of RuntimeException
+    - Checked exceptions subclasses of Exception but not RuntimeException
+    (conditions that are not in the control of the program)
+    program can’t open a file if it does not exist.
+    - Catch of superclass exception  can also catch all objects of it's subclasses.
+- finally
+    - Resource-release
+- throw statement
+    - Used to throw exceptions
+    - Rethrow an exception
+        - Cannot process that exception or can only partially process it.
+        - Defers the exception handling
+        - Next enclosing try will handel the exception
+- Stack unwinding
+    - When an exception is thrown but not caught in a particular scope, the method-call stack is “unwound”
+- Chained Exceptions
+    - Enable an exception object to maintain the complete stack-trace information from the original exception
+
+- New Exception Types
+    - extend Exception
+    - override toString
+
+- Preconditions and Postconditions
+    - Precondition must be true when a method is invoked
+    - Postcondition is true after the method successfully returns
+
+- Assertions
+    - help ensure a program’s validity by catching potential bugs
+        and identifying possible logic errors
+    - assert expression;
+    - assert expression1 : expression2;
+    - throws an AssertionError if expression is false
+    - Enable assertions: java -ea AssertTest
+
+
+
+
+
+
