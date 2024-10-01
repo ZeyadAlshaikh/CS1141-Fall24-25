@@ -1,27 +1,45 @@
-package Tutorials.Tutorial_8.Starter;// Fig. 15.6: ReadTextFile.java
+package Tutorials.Tutorial_8.Solution;// Fig. 15.6: ReadTextFile.java
 // This program reads a text file and displays each record.
+
+import java.io.IOException;
 import java.nio.file.Paths;
-import  java.util.Scanner;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 public class ReadTextFile
-{/*
+{
     // todo: uncomment the code and fix the errors...
    private static Scanner input;
 
    public static void main(String[] args)
    {
-       openFile();
-       readRecords();
-       closeFile();
+      try{
+         openFile();
+         readRecords();
+      }catch (IOException ex){
+         System.err.println("File can not be opened");
+         ex.printStackTrace();
+      }catch ( NoSuchElementException|IllegalStateException ex){
+         System.err.println("Please check the file format. ");
+      }
+      catch (Exception ex){
+         ex.printStackTrace();
+      }finally {
+         closeFile();
+      }
+
+
+      System.out.println("Goodbye");
+
    }
 
    // open file clients.txt
-   public static void openFile()
+   public static void openFile() throws IOException
    {
          input = new Scanner(Paths.get("Tutorials/Tutorial_8/Solution/clients.txt"));
    }
 
    // read record from file
-   public static void readRecords()
+   public static void readRecords() throws NoSuchElementException,IllegalStateException
    {
       System.out.printf("%-10s%-12s%-12s%10s%n", "Account",
          "First Name", "Last Name", "Balance");
@@ -40,7 +58,7 @@ public class ReadTextFile
    {
       if (input != null)
          input.close();
-   }*/
+   }
 } // end class ReadTextFile
 
 /*************************************************************************
