@@ -1,0 +1,18 @@
+To Do:
+- Motivation
+- Generic method
+    - access modifier <Type parameters> return_type method_name(args)
+- Type parameters can represent only reference types (Why?)
+- Generic Classes
+    - access modifier class_name <Type parameters>{
+
+- How generic works
+- Setting upper bound
+- compareTo method from Comparable
+- Stack Example
+
+
+
+
+
+

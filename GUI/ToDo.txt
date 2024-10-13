@@ -1,0 +1,65 @@
+To Do:
+- What is GUI
+- GUI APIs
+    - AWT (Abstract Windowing Toolkit) JDK 1.0
+    - Swing JDK 1.2
+    - JavaFX JDK 8
+- Swing
+    - Nimbus Look-and-Feel
+    - 18 packages of 737 classes as of JDK 8
+    - javax.swing
+        - Containers: such as JFrame, JDialog and JPanel
+        - Components: such as JButton, JTextField and Jlabel
+        - Layout managers: such as FlowLayout, BorderLayout and GridLayout
+        - Pic1
+        - Pic3
+        - Hierarchy of the Swing Container & Component Classes ( Pic2)
+        - Example 1
+
+- Components
+    - JLabel
+    - JButton
+    - JTextField
+    - Panel
+    - Layout Managers (
+        - FlowLayout FlowLayout(int alignment, int hgap, int vgap)
+        - GridLayout GridLayout(int rows, int columns, int hgap, int vgap)
+        - BorderLayout(Default for JFrame) BorderLayout(int hgap, int vgap);
+        - Others)
+        - setLayout(LayoutManager mgr)
+
+- Steps:
+    - import
+        - import javax.swing.*;
+        - import java.awt.*;
+    - extends JFrame
+    - Declare your containers
+    - Declare your components
+    - in your constructor:
+        1- set layout of your JFrame  [ setLayout(new FlowLayout());]
+        2- set container with layout [ pnl.setLayout(new FlowLayout());]
+        3- add components to your containers [pnl.add(btn);]
+        4- add your panel to your JFrame [ add(pnl); ]
+        5- repeat 2-4 for other panels
+        6- set your title [ setTitle("Title");]
+        7- set size for your JFrame [ setSize(300, 200);]
+        7- set visible to true [ setVisible(True);]
+        8- set default close operation [ setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); ]
+    - Now you can use it as any other class
+        - i.e String str = new String();
+        - GUIDemo gui = new GUIDemo();
+
+- Login Example
+
+
+- Adding Event handling
+    - import java.awt.event.*;
+    - implement ActionListener to your class
+    - add action listener [i.e. btn1.addActionListener(this);]
+    - override actionPerformed method
+
+
+
+
+
+
