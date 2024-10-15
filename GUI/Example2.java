@@ -11,6 +11,7 @@ public class Example2  extends JFrame {
 
     public Example2(){
         setLayout(new FlowLayout(FlowLayout.CENTER ,10,10));
+        setLayout(new GridLayout(2,2));
         add(btn1);
         add(btn2);
         add(btn3);
